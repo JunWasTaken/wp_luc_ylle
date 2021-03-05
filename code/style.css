@@ -1,9 +1,20 @@
+@font-face {
+    font-family: "RocknRoll";
+    src: url("RocknRollOne-Regular.ttf") format("truetype");
+}
+
+body{
+    background-color: #202020;
+    color: #D0D0D0;
+    font-family: RocknRoll;
+}
+
 .div1{
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../backgrounds/day.png");
+    background-image: url("./day.png");
     position: fixed;
     top: 0;
     left: 0;
@@ -14,9 +25,17 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../backgrounds/night.png");
+    background-image: url("./night.png");
     position: fixed;
     top: 0;
     left: 0;
     opacity: 0%;
+}
+
+.clock{
+    z-index: 9999;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 5vh;
 }
